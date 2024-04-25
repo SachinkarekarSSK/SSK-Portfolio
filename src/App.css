@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+.Mernlogo {
+  color: palevioletred;
+}
+
+.image {
+  background-image: url(./images/profilepic2.jpg);
+  /* background-position: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+  ;
+  border: 2px solid black;
+  animation: movingBorder 4s ease-in-out infinite;
+}
+
+
+@keyframes movingBorder {
+  0% {
+    border-radius: 69% 33% 49% 78%/62% 39% 69% 50%;
+  }
+
+  50% {
+    border-radius: 50% 60% 70% 50%/50% 50% 50% 50%;
+  }
+
+  100% {
+    border-radius: 69% 33% 49% 78%/62% 39% 69% 50%;
+  }
+}
+
+
+.smallnav {
+  transition: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+}
+
+
+
+/* .aboutImage {
+  background-image: url(images/computer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+} */
+
+
+.Aboutme:hover .rotatingImg img{
+  animation: spin 5s linear infinite;
+  scale: 1;
+}
+
+
+/* .spin{
+
+	animation: spin 5s linear infinite;
+} */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    scale: 0.5;
+  }
+  to {
+    transform: rotate(360deg);
+    scale: 1.5;
+  }
+}
+
+
+
+::-webkit-scrollbar{
+  background: transparent;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: crimson;
+}
+
+
+
+
+
+
+
+
+.movingPhoto{
+  transform: translateY(0%);
+    transition: transform 10s ease-in-out 0s;
+}
+
+.movingPhoto:hover{
+  transform: translateY(-85%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+
+.Card, .h-card{
+  height: 75vh;
+}
+
+
+
+.main-box{
+  background: linear-gradient(rgb(253 242 248), rgb(249 168 212 ));
+}
+
+
+
+
+
+
+
+
+
+
+/* .smallbox::before{
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: -1;
+} */
